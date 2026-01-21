@@ -6,7 +6,7 @@ function isValid(s: string): boolean {
         "]":"["
     }
     for(let i=0; i<s.length; i++){
-        let char = s[i]
+        const char = s[i]
 
         if(char in matching){
             if(stack.length === 0){
